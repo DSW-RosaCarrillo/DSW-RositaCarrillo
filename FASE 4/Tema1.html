@@ -1,67 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/stylos.css">
-    <title>Principal</title>
+    <title>Fase 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
-    <header>
-        <h1> Etiquetas HTML</h1>
+    <header class="contenedor-fluid bg-primary">
+        <div class="row">
+            <div class="col-4"><img src="img/logo.png" alt=""></div>
+            <div class="col-8">
+                <h1>ETIQUETAS BÁSICAS HTML</h1>
+            </div>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a> </li>
-            <li>Temas</li>
-            <ul>
-                <li><a href="tema1.html">Etiquetas HTML</a></li>
-                <li><a href="tema2.html">Atributos y Valores</a></li>
-             </ul>
-             <li>Recursos</li>
-             <ul>
-                <li><a href="recurso1.html">Recurso 1</a></li>
-                <li><a href="recurso2.html">Recurso 2</a></li>
-             </ul>
-             <li>Aprendizaje</li>
-             <ul>
-                <li>Aprendizaje 1</li>
-                <li>Aprendizaje 2</li>
-             </ul>
-             <li><a href="autor.html">Acerca de </a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Tema1.html">Etiquetas Básicas de HTML</a></li>
+                            <li><a class="dropdown-item" href="Tema2.html">Atributos y Valores</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Recursos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Recurso1.html">Recurso 1</a></li>
+                            <li><a class="dropdown-item" href="Recurso2.html">Recurso 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprendizaje
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Aprendizaje1.html">Aprendizaje 1</a></li>
+                            <li><a class="dropdown-item" href="Aprendizaje2.html">Aprenndizaje 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Autor.html">Acerca De</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </nav>
+    
     <main>
         <section>
             <article>
-                <p>Algunas opciones: <br>
-                Para los desarroladores mas avanzados, Editor Sublime Text <br>
-            Para los estudiantes, Brackets <br>
-        Otra alternativa, Editor Atom. <br>
-    Estas son algunas recomendaciones de Juan Antonio Recio Garcia, Autor del libro HTML5, CSS y JQuery: curso práctico <br>
-    <p>
-        https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=52
-    </p>
-</p>
+                <h5>Algunas opciones</h5>
+                    Para los desarroladores mas avanzados, Editor Sublime Text <br>
+                    Para los estudiantes, Brackets <br>
+                    Otra alternativa, Editor Atom. <br>
+                    Estas son algunas recomendaciones de Juan Antonio Recio Garcia, Autor del libro HTML5, CSS y JQuery:
+                    curso práctico <br>
+                <p>
+                    https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=52
+                </p>
+                </p>
 
             </article>
             <article>
-                <iframe src="pdf/Etiquetas HTML.pdf" frameborder="0" width=600 height="=400"></iframe>
+                <iframe src="pdf/Etiquetas HTML.pdf" frameborder="0" width=1000 height="=400"></iframe>
+                <br><br><br><br> <br><br><br><br>
 
             </article>
-            </section>
-            <aside>
-                <iframe src="https://repository.unad.edu.co/handle/10596/22593#"></iframe>
+        </section>
+        <aside>
+            <iframe src="https://repository.unad.edu.co/handle/10596/22593#"></iframe>
 
-            </aside>
-       
+        </aside>
+
     </main>
-    <footer>
-        <p> correo: <e-mail>rositacr8@gmail.com</e-mail> <br>
+   
+    <footer class="contenedor-fluid bg-primary">
+        <p align="center">
+            correo: <e-mail>rositacr8@gmail.com</e-mail> <br>
             Skype: Rosa Carrillo <br>
-            Fecha Actualización: Junio 20 / 2022
+            Fecha Actualización: Julio 18 / 2022
+        </p>
     </footer>
-    
+
 </body>
+
 </html>
